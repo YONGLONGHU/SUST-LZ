@@ -2,15 +2,15 @@
   <view class="container">
     <view class="profile">
       <image class="avatar" src="/static/pictures/1.jpg" mode="aspectFill"></image>
-      <text class="nickname">微信用户</text>
+      <text class="nickname">致良知</text>
     </view>
     <view class="info-list">
-      <view class="info-item" @click="goToSettings">
+      <view class="info-item" @click="goToSettings('nickname')">
         <text class="info-title">昵称</text>
         <text class="info-value">微信用户</text>
         <image class="arrow" src="/static/arrow-right.png" mode="aspectFit"></image>
       </view>
-      <view class="info-item" @click="goToSettings">
+      <view class="info-item" @click="goToSettings('weixinId')">
         <text class="info-title">微信号</text>
         <text class="info-value">wxid_123456789</text>
         <image class="arrow" src="/static/arrow-right.png" mode="aspectFit"></image>
@@ -18,13 +18,14 @@
       <!-- 更多个人信息项 -->
     </view>
     <view class="operation-list">
-      <view class="operation-item" @click="goToSettings">
+      <view class="operation-item" @click="goToSettings('settings')">
         <text>设置</text>
       </view>
       <!-- 更多操作项 -->
     </view>
   </view>
 </template>
+
 <style>
 .container {
   display: flex;
@@ -90,14 +91,30 @@
   text-align: center;
   font-size: 16px;
   color: #333;
+  border-bottom: 1px solid #eee; /* 添加分隔线 */
 }
 </style>
+
 <script>
 export default {
   methods: {
-    goToSettings() {
+    goToSettings(page) {
+      let url = '';
+      switch (page) {
+        case 'nickname':
+          url = '/pages/Communication/index/'; // 假设这是昵称页面的路径
+          break;
+        case 'weixinId':
+          url = '/pages/Communication/index'; // 假设这是微信号页面的路径
+          break;
+        case 'settings':
+          url = '/pages/Communication/index'; // 假设这是设置页面的路径
+          break;
+        default:
+          return;
+      }
       uni.navigateTo({
-        url: '/pages/Communication/index'
+        url: url
       });
     }
   }

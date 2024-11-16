@@ -36,8 +36,8 @@
 }
 
 .pic1 {
-  width: 80%; /* 图片宽度 */
-  height: 3000px; /* 图片高度 */
+  width: 100%; /* 图片宽度 */
+  height: 300px; /* 图片高度 */
 }
 </style>
 <script>
