@@ -96,19 +96,18 @@ export default {
   methods: {
     // 网络请求：获取租户信息
     getTenantInfo() {
-      const url = '/api/project/2595419/api/multi-tenancy/tenants'; // 请求地址
-
-      // 发起网络请求
+      const url = 'https://app.apifox.com/project/2595419/api/multi-tenancy/tenants'; // 替换为实际完整路径
+    
       uni.request({
-        url: url, // 请求的 URL
-        method: 'GET', // 请求方式
+        url: url, // 确保 URL 为完整的绝对路径
+        method: 'GET',
         header: {
-          'Content-Type': 'application/json', // 请求头，指定为 JSON 格式
+          'Content-Type': 'application/json', // 指定请求头
         },
         success: (res) => {
           if (res.statusCode === 200) {
             console.log('请求成功:', res.data);
-            this.tenantInfo = res.data; // 将数据赋值给 tenantInfo
+            this.tenantInfo = res.data; // 更新数据
           } else {
             console.error('请求失败，状态码:', res.statusCode);
             uni.showToast({
@@ -118,14 +117,14 @@ export default {
           }
         },
         fail: (err) => {
-          console.error('请求失败:', err);
+          console.error('请求失败:', err.errMsg); // 输出详细错误
           uni.showToast({
-            title: '请求失败，请检查网络',
+            title: `请求失败: ${err.errMsg}`,
             icon: 'none',
           });
         },
       });
-    },
+    }
   },
 };
 </script>
