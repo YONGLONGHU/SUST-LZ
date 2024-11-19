@@ -1,0 +1,1 @@
+<view class="container"><view class="header"><text class="title">这是首页页面</text><button class="btn" bindtap="{{a}}">获取数据</button></view><view wx:if="{{b}}"><view wx:for="{{c}}" wx:for-item="item" wx:key="c" class="data-item"><text class="tem">温度: {{item.a}}°C</text><text class="som">烟雾值: {{item.b}}</text></view></view></view>

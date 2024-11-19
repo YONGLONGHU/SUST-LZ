@@ -1,0 +1,62 @@
+
+.result-container {
+  padding: 20px;
+  background: linear-gradient(135deg, #1e1e2f, #292942);
+  color: #fff;
+  min-height: 100vh;
+}
+.title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  text-align: center;
+}
+.result-list {
+  max-height: 100%;
+  overflow-y: auto;
+}
+.result-card {
+  display: flex;          /* 使用弹性布局 */
+  flex-direction: column; /* 垂直排列子元素 */
+  gap: 6px;               /* 每行之间增加间隔（可选） */
+  padding: 10px;          /* 增加内边距（可选） */
+  border: 1px solid #ccc; /* 可选：添加边框方便调试 */
+  margin-bottom: 12px;    /* 可选：增加卡片间距 */
+  background-color: #f9f9f9; /* 可选：设置背景色 */
+}
+.result-title {
+  font-size: 16px;
+  font-weight: bold;
+  color: #00d4ff;
+  margin-bottom: 5px;
+}
+.result-info {
+  font-size: 14px;
+  color: #a5a5c0;
+  margin-bottom: 0px;
+}
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+.pagination button {
+  padding: 6px 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+.pagination button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+.pagination text {
+  font-size: 14px;
+  color: #fff;
+}
+

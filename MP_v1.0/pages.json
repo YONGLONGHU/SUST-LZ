@@ -1,0 +1,78 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path" : "pages/inspection/inspection",
+			"style" : 
+			{
+				"navigationBarTitleText" : "巡检"
+			}
+		},
+		{
+			"path" : "pages/Real-time_alarm/Real-time_alarm",
+			"style" : 
+			{
+				"navigationBarTitleText" : "实时报警"
+			}
+		},
+		{
+			"path" : "pages/alarm_history/alarm_history",
+			"style" : 
+			{
+				"navigationBarTitleText" : "报警历史"
+			}
+		},
+		{
+			"path" : "pages/management/management",
+			"style" : 
+			{
+				"navigationBarTitleText" : "管理"
+			}
+		},
+		{
+			"path" : "pages/result_page/result_page",
+			"style" : 
+			{
+				"navigationBarTitleText" : ""
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "量子智能监控平台",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+	  "color": "#8e8e93",
+	  "selectedColor": "#007aff",
+	  "backgroundColor": "#ffffff",
+	  "borderStyle": "black",
+	  "list": [
+	    {
+	      "pagePath": "pages/inspection/inspection",
+	      "text": "巡检",
+	      "iconPath": "static/icons/inspection.png",
+	      "selectedIconPath": "static/icons/inspection_active.png"
+	    },
+	    {
+	      "pagePath": "pages/Real-time_alarm/Real-time_alarm",
+	      "text": "实时报警",
+	      "iconPath": "static/icons/Real-time_alarm .png",
+	      "selectedIconPath": "static/icons/Real-time_alarm_active.png"
+	    },
+	    {
+	      "pagePath": "pages/alarm_history/alarm_history",
+	      "text": "报警历史",
+	      "iconPath": "static/icons/alarm_history.png",
+	      "selectedIconPath": "static/icons/alarm_history_active.png"
+	    },
+		{
+		  "pagePath": "pages/management/management",
+		  "text": "管理",
+		  "iconPath": "static/icons/management.png",
+		  "selectedIconPath": "static/icons/inspection_active.png"
+		}
+	  ]
+	},
+	"uniIdRouter": {}
+}

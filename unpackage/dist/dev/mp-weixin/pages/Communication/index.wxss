@@ -1,0 +1,54 @@
+
+/* 页面整体样式 */
+.container.data-v-49867d47 {
+  padding: 20px;
+  background-color: #f4f6f8;
+  min-height: 100vh;
+}
+
+/* 标题样式 */
+.header.data-v-49867d47 {
+  background-color: #007aff;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.header-title.data-v-49867d47 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* 信息展示区域样式 */
+.info-section.data-v-49867d47 {
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 单条信息的样式 */
+.info-item.data-v-49867d47 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #eaeaea;
+}
+.info-item.data-v-49867d47:last-child {
+  border-bottom: none;
+}
+
+/* 标签和数值样式 */
+.label.data-v-49867d47 {
+  font-weight: bold;
+  color: #333;
+  font-size: 16px;
+}
+.value.data-v-49867d47 {
+  color: #555;
+  font-size: 16px;
+  text-align: right;
+  word-wrap: break-word;
+}
