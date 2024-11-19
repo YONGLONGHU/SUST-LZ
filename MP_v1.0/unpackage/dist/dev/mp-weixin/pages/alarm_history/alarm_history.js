@@ -13,7 +13,13 @@ const _sfc_main = {
         "高空作业机器人",
         "红外摄像头-兴澄",
         "可见光摄像头-兴澄",
-        "Jaka六轴机械臂"
+        "Jaka六轴机械臂",
+        "凯瑞-可见光",
+        "轮式机器人",
+        "云台",
+        "数值烟雾传感器",
+        "烟雾传感器",
+        "挂轨机器人"
       ],
       selectedProductType: "",
       alertCategories: [
@@ -21,12 +27,12 @@ const _sfc_main = {
         "气体监测",
         "撕裂",
         "划痕",
-        "连锁停机",
+        "联锁停机",
         "设备高温检测",
         "跑冒滴检测",
         "巡检日志",
         "安全行为检测",
-        "其他",
+        "其他(默认)",
         "火焰检测"
       ],
       selectedAlertCategory: "",
@@ -34,7 +40,8 @@ const _sfc_main = {
       selectedAlertLevel: "",
       startDate: "",
       endDate: "",
-      selectedCheckboxes: []
+      isConfirmed: ["确认", "不确认"],
+      selectedisConfirmed: ""
     };
   },
   methods: {
@@ -53,8 +60,8 @@ const _sfc_main = {
     onAlertLevelChange(e) {
       this.selectedAlertLevel = this.alertLevels[e.detail.value];
     },
-    onCheckboxChange(e) {
-      this.selectedCheckboxes = e.detail.value;
+    isConfirmedChange(e) {
+      this.selectedisConfirmed = this.isConfirmed[e.detail.value];
     },
     submitForm() {
       const filters = {
@@ -64,7 +71,7 @@ const _sfc_main = {
         timeRange: { start: this.startDate, end: this.endDate },
         alertCategory: this.selectedAlertCategory,
         alertLevel: this.selectedAlertLevel,
-        isConfirmed: this.selectedCheckboxes.includes("确定")
+        isConfirmed: this.selectedisConfirmed
       };
       common_vendor.index.navigateTo({
         url: `/pages/result_page/result_page?filters=${encodeURIComponent(JSON.stringify(filters))}`
@@ -91,9 +98,10 @@ function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
     o: common_vendor.t($data.selectedAlertLevel || "请选择报警等级"),
     p: $data.alertLevels,
     q: common_vendor.o((...args) => $options.onAlertLevelChange && $options.onAlertLevelChange(...args)),
-    r: common_vendor.o((...args) => $options.onCheckboxChange && $options.onCheckboxChange(...args)),
-    s: common_vendor.t($data.selectedCheckboxes.length > 0 ? $data.selectedCheckboxes.join("、") : "未选择"),
-    t: common_vendor.o((...args) => $options.submitForm && $options.submitForm(...args))
+    r: common_vendor.t($data.selectedisConfirmed || "请选择是否确认"),
+    s: $data.isConfirmed,
+    t: common_vendor.o((...args) => $options.isConfirmedChange && $options.isConfirmedChange(...args)),
+    v: common_vendor.o((...args) => $options.submitForm && $options.submitForm(...args))
   };
 }
 const MiniProgramPage = /* @__PURE__ */ common_vendor._export_sfc(_sfc_main, [["render", _sfc_render]]);

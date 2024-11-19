@@ -28,15 +28,6 @@
 .picker-text {
   line-height: 40px;
 }
-.checkbox-group {
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: 5px;
-}
-.checkbox {
-  margin-right: 10px;
-  color: #fff;
-}
 .selected-items {
   margin-top: 10px;
   color: #a5a5c0;

@@ -41,7 +41,7 @@ const _sfc_main = {
         const matchTimeRange = (!((_a = this.filters.timeRange) == null ? void 0 : _a.start) || new Date(item.AlarmTime) >= new Date(this.filters.timeRange.start)) && (!((_b = this.filters.timeRange) == null ? void 0 : _b.end) || new Date(item.AlarmTime) <= new Date(this.filters.timeRange.end));
         const matchAlertCategory = !this.filters.alertCategory || item.AlarmClass === this.filters.alertCategory;
         const matchAlertLevel = !this.filters.alertLevel || item.AlarmLevel.trim().toLowerCase() === this.filters.alertLevel.trim().toLowerCase();
-        const matchIsConfirmed = this.filters.isConfirmed === void 0 || item.Confirm === this.filters.isConfirmed;
+        const matchIsConfirmed = !this.filters.isConfirmed || item.Confirm === this.filters.isConfirmed;
         return matchAlarmName && matchDeviceName && matchProductType && matchTimeRange && matchAlertCategory && matchAlertLevel && matchIsConfirmed;
       });
       this.currentPage = 1;
@@ -69,6 +69,7 @@ const _sfc_main = {
   },
   onLoad(options) {
     this.filters = JSON.parse(decodeURIComponent(options.filters || "{}"));
+    console.log("filters Data:", this.filters);
     this.fetchData();
   }
 };
