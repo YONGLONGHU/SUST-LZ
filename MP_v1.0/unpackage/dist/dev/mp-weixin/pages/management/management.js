@@ -12,18 +12,18 @@ const _sfc_main = {
 };
 function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
   return {
-    a: common_assets._imports_0,
-    b: common_assets._imports_1,
-    c: common_assets._imports_2,
+    a: common_assets._imports_0$1,
+    b: common_assets._imports_1$1,
+    c: common_assets._imports_2$1,
     d: common_vendor.o(($event) => $options.navigateTo("personalCenter")),
-    e: common_assets._imports_3,
-    f: common_assets._imports_2,
+    e: common_assets._imports_3$1,
+    f: common_assets._imports_2$1,
     g: common_vendor.o(($event) => $options.navigateTo("messageManagement")),
     h: common_assets._imports_4,
-    i: common_assets._imports_2,
+    i: common_assets._imports_2$1,
     j: common_vendor.o(($event) => $options.navigateTo("deviceManagement")),
     k: common_assets._imports_5,
-    l: common_assets._imports_2,
+    l: common_assets._imports_2$1,
     m: common_vendor.o(($event) => $options.navigateTo("switchAccount"))
   };
 }
