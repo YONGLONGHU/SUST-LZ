@@ -91,26 +91,28 @@ export default {
         console.log('Filtered Data:', this.filteredData);
       },
     fetchData() {
-      const apiUrl = 'http://192.168.1.128:3000/data';
+      const apiUrl = 'http://113.200.148.162:18885/api/identity/users';
+    
       uni.request({
         url: apiUrl,
         method: 'GET',
+        header: {
+          // 添加必要的请求头信息，例如身份验证
+        },
         success: (res) => {
-          if (res.data.success) {
-            this.allData = res.data.data;
-            // 过滤数据
-			console.log('allData Data:', this.allData);
-			//this.filteredData=this.allData;
-            this.filterData();
+          if (res.statusCode === 200) {
+            // 请求成功，处理返回数据
+            console.log('Response Data:', res.data);
           } else {
-            console.error('请求数据失败:', res.data.message);
+            console.error('请求失败:', res.statusCode, res.data);
           }
         },
         fail: (err) => {
-          console.error('请求失败:', err);
+          console.error('网络请求失败:', err);
         },
       });
     },
+
   },
   onLoad(options) {
     // 接收筛选条件

@@ -48,21 +48,22 @@ const _sfc_main = {
       console.log("Filtered Data:", this.filteredData);
     },
     fetchData() {
-      const apiUrl = "http://192.168.1.128:3000/data";
+      const apiUrl = "http://113.200.148.162:18885/api/identity/users";
       common_vendor.index.request({
         url: apiUrl,
         method: "GET",
+        header: {
+          // 添加必要的请求头信息，例如身份验证
+        },
         success: (res) => {
-          if (res.data.success) {
-            this.allData = res.data.data;
-            console.log("allData Data:", this.allData);
-            this.filterData();
+          if (res.statusCode === 200) {
+            console.log("Response Data:", res.data);
           } else {
-            console.error("请求数据失败:", res.data.message);
+            console.error("请求失败:", res.statusCode, res.data);
           }
         },
         fail: (err) => {
-          console.error("请求失败:", err);
+          console.error("网络请求失败:", err);
         }
       });
     }

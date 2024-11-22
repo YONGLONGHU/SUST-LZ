@@ -1,7 +1,7 @@
 {
   "pages": [
-    "pages/inspection/inspection",
-    "pages/Real-time_alarm/Real-time_alarm",
+    "pages/device_list/device_list",
+    "pages/inspection_log/inspection_log",
     "pages/alarm_history/alarm_history",
     "pages/management/management",
     "pages/result_page/result_page"
@@ -19,14 +19,14 @@
     "borderStyle": "black",
     "list": [
       {
-        "pagePath": "pages/inspection/inspection",
-        "text": "巡检",
+        "pagePath": "pages/device_list/device_list",
+        "text": "设备列表",
         "iconPath": "static/icons/icon_inspect.png",
         "selectedIconPath": "static/icons/icon_inspect_selected.png"
       },
       {
-        "pagePath": "pages/Real-time_alarm/Real-time_alarm",
-        "text": "实时报警",
+        "pagePath": "pages/inspection_log/inspection_log",
+        "text": "巡检日志",
         "iconPath": "static/icons/icon_alarm.png",
         "selectedIconPath": "static/icons/icon_alarm_selected.png"
       },

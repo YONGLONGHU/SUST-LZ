@@ -1,17 +1,17 @@
 {
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
 		{
-			"path" : "pages/inspection/inspection",
+			"path" : "pages/device_list/device_list",
 			"style" : 
 			{
-				"navigationBarTitleText" : "巡检"
+				"navigationBarTitleText" : "设备列表"
 			}
 		},
 		{
-			"path" : "pages/Real-time_alarm/Real-time_alarm",
+			"path" : "pages/inspection_log/inspection_log",
 			"style" : 
 			{
-				"navigationBarTitleText" : "实时报警"
+				"navigationBarTitleText" : "巡检日志"
 			}
 		},
 		{
@@ -32,7 +32,7 @@
 			"path" : "pages/result_page/result_page",
 			"style" : 
 			{
-				"navigationBarTitleText" : ""
+				"navigationBarTitleText" : "报警历史展示"
 			}
 		}
 	],
@@ -49,14 +49,14 @@
 	  "borderStyle": "black",
 	  "list": [
 	    {
-	      "pagePath": "pages/inspection/inspection",
-	      "text": "巡检",
+	      "pagePath": "pages/device_list/device_list",
+	      "text": "设备列表",
 	      "iconPath": "static/icons/icon_inspect.png",
 	      "selectedIconPath": "static/icons/icon_inspect_selected.png"
 	    },
 	    {
-	      "pagePath": "pages/Real-time_alarm/Real-time_alarm",
-	      "text": "实时报警",
+	      "pagePath": "pages/inspection_log/inspection_log",
+	      "text": "巡检日志",
 	      "iconPath": "static/icons/icon_alarm.png",
 	      "selectedIconPath": "static/icons/icon_alarm_selected.png"
 	    },
