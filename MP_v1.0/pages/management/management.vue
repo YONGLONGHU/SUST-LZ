@@ -5,12 +5,12 @@
       <view class="profile-info-horizontal">
         <image class="avatar" src="/static/image/avatar.jpg" mode="aspectFill" />
         <view class="profile-info-text">
-          <text class="name">致良知</text>
+          <text class="name">量子智能</text>
           <text class="username">账号：user123</text>
         </view>
       </view>
       <view class="monitor-stats">
-        <text class="stats">总监控时长：120小时</text>
+        <text class="stats">总监控时长：120小时    </text>
         <text class="stats">监控次数：45次</text>
       </view>
     </view>
