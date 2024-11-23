@@ -43,7 +43,7 @@
     </view>
 
     <!-- 第五部分：切换账号按钮 -->
-    <view class="menu-card" @click="navigateTo('switchAccount')">
+    <view class="menu-card" @click="navigateTo('login')">
       <view class="menu-item">
         <image class="icon" src="/static/icons/switchAccount.png" mode="widthFix" />
         <text class="menu-text">切换账号</text>

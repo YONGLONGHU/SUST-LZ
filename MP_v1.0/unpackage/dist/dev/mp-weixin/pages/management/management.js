@@ -24,7 +24,7 @@ function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
     j: common_vendor.o(($event) => $options.navigateTo("deviceManagement")),
     k: common_assets._imports_5,
     l: common_assets._imports_2$1,
-    m: common_vendor.o(($event) => $options.navigateTo("switchAccount"))
+    m: common_vendor.o(($event) => $options.navigateTo("login"))
   };
 }
 const MiniProgramPage = /* @__PURE__ */ common_vendor._export_sfc(_sfc_main, [["render", _sfc_render], ["__scopeId", "data-v-e1f91689"]]);
