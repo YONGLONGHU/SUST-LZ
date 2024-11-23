@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/login/login",
     "pages/device_list/device_list",
     "pages/inspection_log/inspection_log",
     "pages/alarm_history/alarm_history",
