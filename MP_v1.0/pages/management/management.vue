@@ -5,7 +5,7 @@
       <view class="profile-info-horizontal">
         <image class="avatar" src="/static/image/avatar.jpg" mode="aspectFill" />
         <view class="profile-info-text">
-          <text class="name">量子智能</text>
+          <text class="name">量子智能助手</text>
           <text class="username">账号：user123</text>
         </view>
       </view>
@@ -16,7 +16,7 @@
     </view>
 
     <!-- 第二部分：个人中心按钮 -->
-    <view class="menu-card" @click="navigateTo('personalCenter')">
+    <view class="menu-card" @click="navigateTo('personal_center')">
       <view class="menu-item">
         <image class="icon" src="/static/icons/personal-center.png" mode="widthFix" />
         <text class="menu-text">个人中心</text>
@@ -24,32 +24,22 @@
       </view>
     </view>
 
-    <!-- 第三部分：消息管理按钮 -->
-    <view class="menu-card" @click="navigateTo('messageManagement')">
-      <view class="menu-item">
-        <image class="icon" src="/static/icons/message.png" mode="widthFix" />
-        <text class="menu-text">消息管理</text>
-        <image class="arrow" src="/static/icons/arrow-right.png" mode="widthFix" />
-      </view>
-    </view>
-
-    <!-- 第四部分：设备管理按钮 -->
-    <view class="menu-card" @click="navigateTo('deviceManagement')">
-      <view class="menu-item">
-        <image class="icon" src="/static/icons/device.png" mode="widthFix" />
-        <text class="menu-text">设备管理</text>
-        <image class="arrow" src="/static/icons/arrow-right.png" mode="widthFix" />
-      </view>
-    </view>
-
-    <!-- 第五部分：切换账号按钮 -->
-    <view class="menu-card" @click="navigateTo('login')">
+    <!-- 第二部分：切换账号按钮 -->
+    <view class="menu-card" @click="navigateTo('switch_account')">
       <view class="menu-item">
         <image class="icon" src="/static/icons/switchAccount.png" mode="widthFix" />
         <text class="menu-text">切换账号</text>
         <image class="arrow" src="/static/icons/arrow-right.png" mode="widthFix" />
       </view>
     </view>
+	<!-- 第三部分：关于我们按钮 -->
+	<view class="menu-card" @click="navigateTo('about_us')">
+	  <view class="menu-item">
+	    <image class="icon" src="/static/icons/icon_manage.png" mode="widthFix" />
+	    <text class="menu-text">关于我们</text>
+	    <image class="arrow" src="/static/icons/arrow-right.png" mode="widthFix" />
+	  </view>
+	</view>
   </view>
 </template>
 

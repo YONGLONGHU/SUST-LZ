@@ -5,7 +5,9 @@
     "pages/inspection_log/inspection_log",
     "pages/alarm_history/alarm_history",
     "pages/management/management",
-    "pages/result_page/result_page"
+    "pages/result_page/result_page",
+    "pages/personal_center/personal_center",
+    "pages/switch_account/switch_account"
   ],
   "window": {
     "navigationBarTextStyle": "black",

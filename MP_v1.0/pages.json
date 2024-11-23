@@ -41,6 +41,20 @@
 			{
 				"navigationBarTitleText" : "报警历史展示"
 			}
+		},
+		{
+			"path" : "pages/personal_center/personal_center",
+			"style" : 
+			{
+				"navigationBarTitleText" : "个人中心"
+			}
+		},
+		{
+			"path" : "pages/switch_account/switch_account",
+			"style" : 
+			{
+				"navigationBarTitleText" : "切换账号"
+			}
 		}
 	],
 	"globalStyle": {

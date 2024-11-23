@@ -15,16 +15,13 @@ function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
     a: common_assets._imports_0$2,
     b: common_assets._imports_1$2,
     c: common_assets._imports_2$1,
-    d: common_vendor.o(($event) => $options.navigateTo("personalCenter")),
+    d: common_vendor.o(($event) => $options.navigateTo("personal_center")),
     e: common_assets._imports_3$1,
     f: common_assets._imports_2$1,
-    g: common_vendor.o(($event) => $options.navigateTo("messageManagement")),
+    g: common_vendor.o(($event) => $options.navigateTo("switch_account")),
     h: common_assets._imports_4,
     i: common_assets._imports_2$1,
-    j: common_vendor.o(($event) => $options.navigateTo("deviceManagement")),
-    k: common_assets._imports_5,
-    l: common_assets._imports_2$1,
-    m: common_vendor.o(($event) => $options.navigateTo("login"))
+    j: common_vendor.o(($event) => $options.navigateTo("about_us"))
   };
 }
 const MiniProgramPage = /* @__PURE__ */ common_vendor._export_sfc(_sfc_main, [["render", _sfc_render], ["__scopeId", "data-v-e1f91689"]]);
