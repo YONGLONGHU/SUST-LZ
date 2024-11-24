@@ -4,24 +4,6 @@ const _sfc_main = {
   data() {
     return {
       alarmName: "",
-      deviceName: "",
-      productTypes: [
-        "防爆门-连帆",
-        "输送带",
-        "红外温度检测设备",
-        "海康Vis",
-        "高空作业机器人",
-        "红外摄像头-兴澄",
-        "可见光摄像头-兴澄",
-        "Jaka六轴机械臂",
-        "凯瑞-可见光",
-        "轮式机器人",
-        "云台",
-        "数值烟雾传感器",
-        "烟雾传感器",
-        "挂轨机器人"
-      ],
-      selectedProductType: "",
       alertCategories: [
         "AI报警",
         "气体监测",
@@ -51,9 +33,6 @@ const _sfc_main = {
     onEndDateChange(e) {
       this.endDate = e.detail.value;
     },
-    onProductTypeChange(e) {
-      this.selectedProductType = this.productTypes[e.detail.value];
-    },
     onAlertCategoryChange(e) {
       this.selectedAlertCategory = this.alertCategories[e.detail.value];
     },
@@ -66,8 +45,6 @@ const _sfc_main = {
     submitForm() {
       const filters = {
         alarmName: this.alarmName,
-        deviceName: this.deviceName,
-        productType: this.selectedProductType,
         timeRange: { start: this.startDate, end: this.endDate },
         alertCategory: this.selectedAlertCategory,
         alertLevel: this.selectedAlertLevel,
@@ -83,25 +60,20 @@ function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
   return {
     a: $data.alarmName,
     b: common_vendor.o(($event) => $data.alarmName = $event.detail.value),
-    c: $data.deviceName,
-    d: common_vendor.o(($event) => $data.deviceName = $event.detail.value),
-    e: common_vendor.t($data.selectedProductType || "请选择产品类型"),
-    f: $data.productTypes,
-    g: common_vendor.o((...args) => $options.onProductTypeChange && $options.onProductTypeChange(...args)),
-    h: common_vendor.t($data.startDate || "开始时间"),
-    i: common_vendor.o((...args) => $options.onStartDateChange && $options.onStartDateChange(...args)),
-    j: common_vendor.t($data.endDate || "结束时间"),
-    k: common_vendor.o((...args) => $options.onEndDateChange && $options.onEndDateChange(...args)),
-    l: common_vendor.t($data.selectedAlertCategory || "请选择报警分类"),
-    m: $data.alertCategories,
-    n: common_vendor.o((...args) => $options.onAlertCategoryChange && $options.onAlertCategoryChange(...args)),
-    o: common_vendor.t($data.selectedAlertLevel || "请选择报警等级"),
-    p: $data.alertLevels,
-    q: common_vendor.o((...args) => $options.onAlertLevelChange && $options.onAlertLevelChange(...args)),
-    r: common_vendor.t($data.selectedisConfirmed || "请选择是否确认"),
-    s: $data.isConfirmed,
-    t: common_vendor.o((...args) => $options.isConfirmedChange && $options.isConfirmedChange(...args)),
-    v: common_vendor.o((...args) => $options.submitForm && $options.submitForm(...args))
+    c: common_vendor.t($data.startDate || "开始时间"),
+    d: common_vendor.o((...args) => $options.onStartDateChange && $options.onStartDateChange(...args)),
+    e: common_vendor.t($data.endDate || "结束时间"),
+    f: common_vendor.o((...args) => $options.onEndDateChange && $options.onEndDateChange(...args)),
+    g: common_vendor.t($data.selectedAlertCategory || "请选择报警分类"),
+    h: $data.alertCategories,
+    i: common_vendor.o((...args) => $options.onAlertCategoryChange && $options.onAlertCategoryChange(...args)),
+    j: common_vendor.t($data.selectedAlertLevel || "请选择报警等级"),
+    k: $data.alertLevels,
+    l: common_vendor.o((...args) => $options.onAlertLevelChange && $options.onAlertLevelChange(...args)),
+    m: common_vendor.t($data.selectedisConfirmed || "请选择是否确认"),
+    n: $data.isConfirmed,
+    o: common_vendor.o((...args) => $options.isConfirmedChange && $options.isConfirmedChange(...args)),
+    p: common_vendor.o((...args) => $options.submitForm && $options.submitForm(...args))
   };
 }
 const MiniProgramPage = /* @__PURE__ */ common_vendor._export_sfc(_sfc_main, [["render", _sfc_render]]);

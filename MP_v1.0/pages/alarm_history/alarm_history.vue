@@ -6,18 +6,6 @@
     </view>
 
     <view class="input-group">
-      <text class="label">设备名称</text>
-      <input class="input" placeholder="请输入设备名称" v-model="deviceName" />
-    </view>
-
-    <view class="input-group">
-      <text class="label">产品类型</text>
-      <picker mode="selector" :range="productTypes" class="picker" @change="onProductTypeChange">
-        <text class="picker-text">{{ selectedProductType || '请选择产品类型' }}</text>
-      </picker>
-    </view>
-
-    <view class="input-group">
       <text class="label">时间区间</text>
       <picker mode="date" class="picker" @change="onStartDateChange">
         <text class="picker-text">{{ startDate || '开始时间' }}</text>
@@ -57,24 +45,6 @@ export default {
   data() {
     return {
       alarmName: '',
-      deviceName: '',
-      productTypes: [
-        '防爆门-连帆',
-        '输送带',
-        '红外温度检测设备',
-        '海康Vis',
-        '高空作业机器人',
-        '红外摄像头-兴澄',
-        '可见光摄像头-兴澄',
-        'Jaka六轴机械臂',
-		'凯瑞-可见光',
-		'轮式机器人',
-		'云台',
-		'数值烟雾传感器',
-		'烟雾传感器',
-		'挂轨机器人'
-      ],
-      selectedProductType: '',
       alertCategories: [
         'AI报警',
         '气体监测',
@@ -93,8 +63,8 @@ export default {
       selectedAlertLevel: '',
       startDate: '',
       endDate: '',
-	  isConfirmed:['确认','不确认'],
-      selectedisConfirmed:''
+      isConfirmed: ['确认', '不确认'],
+      selectedisConfirmed: ''
     };
   },
   methods: {
@@ -104,23 +74,18 @@ export default {
     onEndDateChange(e) {
       this.endDate = e.detail.value;
     },
-    onProductTypeChange(e) {
-      this.selectedProductType = this.productTypes[e.detail.value];
-    },
     onAlertCategoryChange(e) {
       this.selectedAlertCategory = this.alertCategories[e.detail.value];
     },
     onAlertLevelChange(e) {
       this.selectedAlertLevel = this.alertLevels[e.detail.value];
     },
-	isConfirmedChange(e){
-		this.selectedisConfirmed=this.isConfirmed[e.detail.value];
-	},
+    isConfirmedChange(e) {
+      this.selectedisConfirmed = this.isConfirmed[e.detail.value];
+    },
     submitForm() {
       const filters = {
         alarmName: this.alarmName,
-        deviceName: this.deviceName,
-        productType: this.selectedProductType,
         timeRange: { start: this.startDate, end: this.endDate },
         alertCategory: this.selectedAlertCategory,
         alertLevel: this.selectedAlertLevel,
@@ -135,7 +100,6 @@ export default {
   }
 };
 </script>
-
 
 <style>
 .container {
@@ -170,12 +134,6 @@ export default {
 
 .picker-text {
   line-height: 40px;
-}
-
-.selected-items {
-  margin-top: 10px;
-  color: #a5a5c0;
-  font-size: 14px;
 }
 
 .submit-btn {
