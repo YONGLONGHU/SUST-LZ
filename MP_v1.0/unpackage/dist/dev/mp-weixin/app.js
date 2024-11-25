@@ -10,8 +10,17 @@ if (!Math) {
   "./pages/result_page/result_page.js";
   "./pages/personal_center/personal_center.js";
   "./pages/switch_account/switch_account.js";
+  "./pages/about_us/about_us.js";
 }
 const _sfc_main = {
+  onLaunch() {
+    const isLoggedIn = common_vendor.index.getStorageSync("isLoggedIn");
+    if (!isLoggedIn) {
+      common_vendor.index.redirectTo({
+        url: "/pages/login/login"
+      });
+    }
+  },
   onLaunch: function() {
     console.log("App Launch");
   },

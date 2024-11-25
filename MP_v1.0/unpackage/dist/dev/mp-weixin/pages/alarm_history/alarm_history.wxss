@@ -1,44 +1,126 @@
 
 .container {
-  padding: 20px;
-  background: linear-gradient(135deg, #1e1e2f, #292942);
-  color: #fff;
-  min-height: 100vh;
-  font-family: Arial, sans-serif;
+		padding: 5px;
+		background: linear-gradient(135deg, #1e1e2f, #292942);
+		color: #fff;
+		min-height: 100vh;
+		font-family: Arial, sans-serif;
+}
+.row {
+		display: flex;
+		justify-content: space-between;
+		/* 三列均匀分布 */
+}
+.column {
+		flex: 1;
 }
 .input-group {
-  margin-bottom: 15px; /* 控件间距缩小 */
-  display: flex;
-  flex-direction: column;
-}
-.label {
-  font-size: 16px;
-  margin-bottom: 5px;
-  color: #a5a5c0;
+		margin-bottom: 10px;
+		/* 控件之间的间距 */
 }
 .input,
-.picker {
-  height: 40px;
-  padding: 0 10px;
-  background-color: #2e2e3f;
-  border: 1px solid #444;
-  border-radius: 5px;
-  color: #fff;
+	.picker {
+		text-align: center;
+		font-size: 10px;
+		height: 30px;
+		padding: 0 10px;
+		background-color: #2e2e3f;
+		border: 1px solid #444;
+		border-radius: 5px;
+		color: #fff;
 }
 .picker-text {
-  line-height: 40px;
+		text-align: center;
+		font-size: 10px;
+		line-height: 30px;
 }
-.submit-btn {
-  width: 100%;
-  height: 45px;
-  background-color: #007aff;
-  color: white;
-  text-align: center;
-  line-height: 45px;
-  border-radius: 5px;
-  font-size: 16px;
-  font-weight: bold;
+.data-list {
+		flex: 1;
 }
-.submit-btn:active {
-  background-color: #005bb5;
+.data-item {
+		display: flex;
+		flex-direction: column;
+		/* 改为垂直布局 */
+		padding: 3px;
+		background: rgba(255, 255, 255, 0.1);
+		color: #fff;
+		box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+		border-radius: 8px;
+		border: 1px solid #444;
+		font-size: 13px;
+}
+.data-row {
+		display: flex;
+		flex-wrap: nowrap;
+		/* 子元素在同一行展示 */
+		justify-content: space-between;
+		margin-top: 2px;
+		/* 每行之间增加间距 */
+}
+.data-row1 {
+		display: flex;
+		flex-wrap: nowrap;
+		/* 子元素在同一行展示 */
+		justify-content: space-between;
+		margin-top: 6px;
+		/* 每行之间增加间距 */
+}
+.data-column1,
+	.data-column2,
+	.data-column3,
+	.data-column4,
+	.data-column5,
+	.action-btn1 {
+		text-align: left;
+}
+.data-column1 {
+		width: 30%;
+}
+.data-column2 {
+		width: 50%;
+}
+.data-column3 {
+		width: 20%;
+}
+.data-column4 {
+		width: 30%;
+}
+.data-column5 {
+		width: 50%;
+		/* 平均分配第二行宽度 */
+}
+.action-btn1 {
+		width: 20%;
+		padding: 0px;
+		background-color: #007aff;
+		color: white;
+		border-radius: 5px;
+		font-size: 12px;
+		/* 缩小字体 */
+}
+.pagination {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 2px;
+}
+.pagination button {
+		padding: 2px;
+		margin: 4px;
+		background-color: #007aff;
+		color: white;
+		border: none;
+		border-radius: 5px;
+		cursor: pointer;
+		font-size: 10px;
+		/* 调整按钮字体大小 */
+}
+.span {
+		margin: 2px;
+		font-size: 12px;
+		/* 调整页码文字字体大小 */
+}
+.pagination button:disabled {
+		background-color: #999;
+		cursor: not-allowed;
 }

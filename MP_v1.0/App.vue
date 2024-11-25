@@ -1,5 +1,17 @@
 <script>
 	export default {
+		onLaunch() {
+			// 启动时检查登录状态
+			const isLoggedIn = uni.getStorageSync('isLoggedIn');
+			if (!isLoggedIn) {
+				// 未登录，跳转到登录页面
+				uni.redirectTo({
+					url: '/pages/login/login'
+				});
+			} else {
+				// 已登录，不做操作
+			}
+		},
 		onLaunch: function() {
 			console.log('App Launch')
 		},

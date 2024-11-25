@@ -1,59 +1,58 @@
 {
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
 		{
-			"path" : "pages/login/login",
-			"style" : 
-			{
-				"navigationBarTitleText" : "登 录"
+			"path": "pages/login/login",
+			"style": {
+				"navigationBarTitleText": "登 录"
 			}
 		},
 		{
-			"path" : "pages/device_list/device_list",
-			"style" : 
-			{
-				"navigationBarTitleText" : "设备列表"
+			"path": "pages/device_list/device_list",
+			"style": {
+				"navigationBarTitleText": "设备列表"
 			}
 		},
 		{
-			"path" : "pages/inspection_log/inspection_log",
-			"style" : 
-			{
-				"navigationBarTitleText" : "巡检日志"
+			"path": "pages/inspection_log/inspection_log",
+			"style": {
+				"navigationBarTitleText": "巡检日志"
 			}
 		},
 		{
-			"path" : "pages/alarm_history/alarm_history",
-			"style" : 
-			{
-				"navigationBarTitleText" : "报警历史"
+			"path": "pages/alarm_history/alarm_history",
+			"style": {
+				"navigationBarTitleText": "报警历史"
 			}
 		},
 		{
-			"path" : "pages/management/management",
-			"style" : 
-			{
-				"navigationBarTitleText" : "管理"
+			"path": "pages/management/management",
+			"style": {
+				"navigationBarTitleText": "管理"
 			}
 		},
 		{
-			"path" : "pages/result_page/result_page",
-			"style" : 
-			{
-				"navigationBarTitleText" : "报警历史展示"
+			"path": "pages/result_page/result_page",
+			"style": {
+				"navigationBarTitleText": "报警历史展示"
 			}
 		},
 		{
-			"path" : "pages/personal_center/personal_center",
-			"style" : 
-			{
-				"navigationBarTitleText" : "个人中心"
+			"path": "pages/personal_center/personal_center",
+			"style": {
+				"navigationBarTitleText": "个人中心"
 			}
 		},
 		{
-			"path" : "pages/switch_account/switch_account",
+			"path": "pages/switch_account/switch_account",
+			"style": {
+				"navigationBarTitleText": "切换账号"
+			}
+		},
+		{
+			"path" : "pages/about_us/about_us",
 			"style" : 
 			{
-				"navigationBarTitleText" : "切换账号"
+				"navigationBarTitleText" : "关于我们"
 			}
 		}
 	],
@@ -64,36 +63,35 @@
 		"backgroundColor": "#F8F8F8"
 	},
 	"tabBar": {
-	  "color": "#8e8e93",
-	  "selectedColor": "#007aff",
-	  "backgroundColor": "#ffffff",
-	  "borderStyle": "black",
-	  "list": [
-	    {
-	      "pagePath": "pages/device_list/device_list",
-	      "text": "设备列表",
-	      "iconPath": "static/icons/icon_inspect.png",
-	      "selectedIconPath": "static/icons/icon_inspect_selected.png"
-	    },
-	    {
-	      "pagePath": "pages/inspection_log/inspection_log",
-	      "text": "巡检日志",
-	      "iconPath": "static/icons/icon_alarm.png",
-	      "selectedIconPath": "static/icons/icon_alarm_selected.png"
-	    },
-	    {
-	      "pagePath": "pages/alarm_history/alarm_history",
-	      "text": "报警历史",
-	      "iconPath": "static/icons/icon_history.png",
-	      "selectedIconPath": "static/icons/icon_history_selected.png"
-	    },
-		{
-		  "pagePath": "pages/management/management",
-		  "text": "管理",
-		  "iconPath": "static/icons/icon_manage.png",
-		  "selectedIconPath": "static/icons/icon_manage_selected.png"
-		}
-	  ]
+		"color": "#8e8e93",
+		"selectedColor": "#007aff",
+		"backgroundColor": "#ffffff",
+		"borderStyle": "black",
+		"list": [{
+				"pagePath": "pages/device_list/device_list",
+				"text": "设备列表",
+				"iconPath": "static/icons/icon_inspect.png",
+				"selectedIconPath": "static/icons/icon_inspect_selected.png"
+			},
+			{
+				"pagePath": "pages/inspection_log/inspection_log",
+				"text": "巡检日志",
+				"iconPath": "static/icons/icon_alarm.png",
+				"selectedIconPath": "static/icons/icon_alarm_selected.png"
+			},
+			{
+				"pagePath": "pages/alarm_history/alarm_history",
+				"text": "报警历史",
+				"iconPath": "static/icons/icon_history.png",
+				"selectedIconPath": "static/icons/icon_history_selected.png"
+			},
+			{
+				"pagePath": "pages/management/management",
+				"text": "管理",
+				"iconPath": "static/icons/icon_manage.png",
+				"selectedIconPath": "static/icons/icon_manage_selected.png"
+			}
+		]
 	},
 	"uniIdRouter": {}
 }
