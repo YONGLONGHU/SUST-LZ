@@ -1,0 +1,173 @@
+
+.container {
+		padding: 8px;
+		background: linear-gradient(135deg, #1e1e2f, #292942);
+		display: flex;
+		flex-direction: column;
+		min-height: 100vh;
+}
+.filter {
+		flex: 1;
+}
+.row {
+		display: flex;
+		justify-content: space-between;
+		/* 控件均匀分布 */
+		align-items: left;
+		/* 垂直居中 */
+		font-size: 10px;
+}
+.filter-input {
+		width: 80%;
+		height: 40px;
+		padding: 0 10px;
+		background-color: #2e2e3f;
+		border: 1px solid #444;
+		border-radius: 5px;
+		color: #fff;
+}
+.picker {
+		line-height: 40px;
+		color: #fff;
+		text-align: left;
+}
+.data-list {
+		flex: 1;
+}
+.data-item {
+		display: flex;
+		flex-direction: column;
+		/* 改为垂直布局 */
+		padding: 3px;
+		background: rgba(255, 255, 255, 0.1);
+		color: #fff;
+		box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+		border-radius: 8px;
+		border: 1px solid #444;
+		font-size: 13px;
+}
+.data-row {
+		display: flex;
+		flex-wrap: nowrap;
+		/* 子元素在同一行展示 */
+		justify-content: space-between;
+		margin-top: 2px;
+		/* 每行之间增加间距 */
+}
+.data-column1,
+	.data-column2,
+	.data-column3,
+	.data-column4,
+	.data-column5,
+	.data-column6,
+	.action-column {
+		text-align: left;
+}
+.data-column1 {
+		width: 30%;
+}
+.data-column2 {
+		width: 45%;
+}
+.data-column3 {
+		width: 15%;
+}
+.data-column4 {
+		width: 30%;
+}
+.data-column5 {
+		width: 45%;
+		/* 平均分配第二行宽度 */
+}
+.data-column6 {
+		width: 15%;
+}
+.action-btn1 {
+		width: 10%;
+		padding: 0px;
+		background-color: #007aff;
+		color: white;
+		border-radius: 5px;
+		font-size: 12px;
+		/* 缩小字体 */
+}
+.action-btn2 {
+		width: 10%;
+		padding: 0px;
+		background-color: #007aff;
+		color: white;
+		border-radius: 5px;
+		font-size: 12px;
+		/* 缩小字体 */
+}
+.modal {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: rgba(0, 0, 0, 0.7);
+		/* 半透明黑色背景 */
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		z-index: 1000;
+}
+.modal-content {
+		background: #2e2e3f;
+		padding: 20px;
+		border-radius: 10px;
+		box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+		width: 80%;
+		max-width: 600px;
+}
+.modal-header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: 10px;
+}
+.modal-title {
+		font-size: 20px;
+		color: #fff;
+}
+.close-btn {
+		background: transparent;
+		border: none;
+		color: #fff;
+		font-size: 18px;
+		cursor: pointer;
+}
+.modal-body {
+		font-size: 14px;
+		color: #ccc;
+}
+.modal-body strong {
+		color: #fff;
+}
+.pagination {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 2px;
+}
+.pagination button {
+		padding: 2px;
+		margin: 4px;
+		background-color: #007aff;
+		color: white;
+		border: none;
+		border-radius: 5px;
+		cursor: pointer;
+		font-size: 10px;
+		/* 调整按钮字体大小 */
+}
+.span {
+		margin: 2px;
+		font-size: 12px;
+		/* 调整页码文字字体大小 */
+}
+.pagination button:disabled {
+		background-color: #999;
+		cursor: not-allowed;
+}

@@ -1,86 +1,86 @@
 
-/* 页面整体样式 */
+	/* 页面整体样式 */
 .container.data-v-e1f91689 {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  padding: 20px;
-  background: linear-gradient(135deg, #1e1e2f, #292942);
-  min-height: 100vh;
-  color: #fff;
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+		padding: 20px;
+		background: linear-gradient(135deg, #1e1e2f, #292942);
+		min-height: 100vh;
+		color: #fff;
 }
 
-/* 第一部分样式 */
+	/* 第一部分样式 */
 .profile-card.data-v-e1f91689 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background: rgba(255, 255, 255, 0.1);
-  padding: 20px;
-  border-radius: 15px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		background: rgba(255, 255, 255, 0.1);
+		padding: 20px;
+		border-radius: 15px;
+		box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 .profile-info-horizontal.data-v-e1f91689 {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-  width: 100%;
+		display: flex;
+		align-items: center;
+		gap: 15px;
+		width: 100%;
 }
 .avatar.data-v-e1f91689 {
-	margin-left: 30px;
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  border: 2px solid #00d4ff;
+		margin-left: 30px;
+		width: 80px;
+		height: 80px;
+		border-radius: 50%;
+		border: 2px solid #00d4ff;
 }
 .profile-info-text.data-v-e1f91689 {
-  display: flex;
-  flex-direction: column;
+		display: flex;
+		flex-direction: column;
 }
 .username.data-v-e1f91689 {
-  font-size: 14px;
-  color: #a5a5c0;
-  margin-top: 5px;
+		font-size: 14px;
+		color: #a5a5c0;
+		margin-top: 5px;
 }
 .name.data-v-e1f91689 {
-  font-size: 18px;
-  font-weight: bold;
-  margin-bottom: 5px;
+		font-size: 18px;
+		font-weight: bold;
+		margin-bottom: 5px;
 }
 .monitor-stats.data-v-e1f91689 {
-  text-align: center;
-  margin-top: 15px;
+		text-align: center;
+		margin-top: 15px;
 }
 .stats.data-v-e1f91689 {
-  font-size: 14px;
-  color: #a5a5c0;
-  margin: 5px 0;
+		font-size: 14px;
+		color: #a5a5c0;
+		margin: 5px 0;
 }
 
-/* 按钮部分样式 */
+	/* 按钮部分样式 */
 .menu-card.data-v-e1f91689 {
-  background: rgba(255, 255, 255, 0.1);
-  padding: 15px;
-  border-radius: 15px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-  cursor: pointer;
+		background: rgba(255, 255, 255, 0.1);
+		padding: 15px;
+		border-radius: 15px;
+		box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+		cursor: pointer;
 }
 .menu-item.data-v-e1f91689 {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
 }
 .icon.data-v-e1f91689 {
-  width: 24px;
-  height: 24px;
+		width: 24px;
+		height: 24px;
 }
 .menu-text.data-v-e1f91689 {
-  flex: 1;
-  font-size: 16px;
-  margin-left: 15px;
-  color: #fff;
+		flex: 1;
+		font-size: 16px;
+		margin-left: 15px;
+		color: #fff;
 }
 .arrow.data-v-e1f91689 {
-  width: 16px;
-  height: 16px;
+		width: 16px;
+		height: 16px;
 }

@@ -1,0 +1,130 @@
+
+	/* 整个页面的背景颜色和布局 */
+.container.data-v-401a9837 {
+		background: linear-gradient(135deg, #1e1e2f, #292942);
+		min-height: 100vh;
+		color: #fff;
+		font-family: 'Arial', sans-serif;
+		padding: 20px;
+		box-sizing: border-box;
+}
+
+	/* 上半部分：图像展示 */
+.image-container.data-v-401a9837 {
+		margin-bottom: 20px;
+		text-align: center;
+}
+.image.data-v-401a9837 {
+		width: 100%;
+		max-height: 300px;
+		border-radius: 10px;
+		box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+	/* 下半部分：四个控制区域 */
+.control-container.data-v-401a9837 {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+}
+
+	/* 每行控制区域布局 */
+.control-row.data-v-401a9837 {
+		display: flex;
+		justify-content: space-between;
+		gap: 20px;
+}
+
+	/* 每行控制区域布局：一行两列 */
+.control-row-2.data-v-401a9837 {
+		margin-top: 10px;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 10px;
+}
+
+	/* 每行控制区域布局：一行三列 */
+.control-row-3.data-v-401a9837 {
+		margin-top: 10px;
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 5px;
+}
+
+	/* 单个控制区域的样式 */
+.control-box.data-v-401a9837 {
+		flex: 1;
+		background: rgba(255, 255, 255, 0.1);
+		padding: 15px;
+		border-radius: 10px;
+		box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.control-title.data-v-401a9837 {
+		text-align: left;
+		font-size: 16px;
+		font-weight: bold;
+		margin-bottom: 10px;
+}
+.control-content.data-v-401a9837 {
+		text-align: left;
+		font-size: 12px;
+		margin-top: 5px;
+}
+.control-button.data-v-401a9837 {
+		background-color: #007aff;
+		color: white;
+		border: none;
+		padding: 5px;
+		border-radius: 5px;
+		font-size: 12px;
+		cursor: pointer;
+		transition: background-color 0.3s;
+}
+.control-button.data-v-401a9837:hover {
+		background-color: #005bb5;
+}
+
+	/* 不同区域的特定样式 */
+.sensor-box.data-v-401a9837 {
+		background-color: rgba(34, 34, 59, 0.7);
+}
+.command-box.data-v-401a9837 {
+		background-color: rgba(34, 34, 59, 0.7);
+}
+.robot-box.data-v-401a9837 {
+		background-color: rgba(34, 34, 59, 0.7);
+}
+.camera-box.data-v-401a9837 {
+		background-color: rgba(34, 34, 59, 0.7);
+}
+.speed-input.data-v-401a9837 {
+		margin-top: 10px;
+		display: flex;
+		justify-content: space-between;
+}
+input.data-v-401a9837 {
+		width: 80%%;
+		padding: 5px;
+		border-radius: 5px;
+		border: 1px solid #ddd;
+}
+input[type="number"].data-v-401a9837 {
+		-moz-appearance: textfield;
+}
+input[type="number"].data-v-401a9837::-webkit-outer-spin-button,
+	input[type="number"].data-v-401a9837::-webkit-inner-spin-button {
+		-webkit-appearance: none;
+		margin: 0;
+}
+.set_speed.data-v-401a9837 {
+		margin-top: 10px;
+		font-size: 12px;
+}
+.set_light.data-v-401a9837 {
+		font-size: 12px;
+		margin-top: 10px;
+}
+input[type="number"].data-v-401a9837:focus {
+		outline: none;
+		border-color: #007aff;
+}

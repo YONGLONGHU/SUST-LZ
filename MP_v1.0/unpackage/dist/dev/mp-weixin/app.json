@@ -8,7 +8,11 @@
     "pages/result_page/result_page",
     "pages/personal_center/personal_center",
     "pages/switch_account/switch_account",
-    "pages/about_us/about_us"
+    "pages/about_us/about_us",
+    "pages/gg_robot/gg_robot",
+    "pages/pb_robot/pb_robot",
+    "pages/ls_robot/ls_robot",
+    "pages/roomba/roomba"
   ],
   "window": {
     "navigationBarTextStyle": "black",

@@ -54,6 +54,34 @@
 			{
 				"navigationBarTitleText" : "关于我们"
 			}
+		},
+		{
+			"path" : "pages/gg_robot/gg_robot",
+			"style" : 
+			{
+				"navigationBarTitleText" : "挂轨机器人"
+			}
+		},
+		{
+			"path" : "pages/pb_robot/pb_robot",
+			"style" : 
+			{
+				"navigationBarTitleText" : "平板机器人"
+			}
+		},
+		{
+			"path" : "pages/ls_robot/ls_robot",
+			"style" : 
+			{
+				"navigationBarTitleText" : "轮式机器人"
+			}
+		},
+		{
+			"path" : "pages/roomba/roomba",
+			"style" : 
+			{
+				"navigationBarTitleText" : "Roomba s9机器人"
+			}
 		}
 	],
 	"globalStyle": {

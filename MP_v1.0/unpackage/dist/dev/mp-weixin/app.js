@@ -11,6 +11,10 @@ if (!Math) {
   "./pages/personal_center/personal_center.js";
   "./pages/switch_account/switch_account.js";
   "./pages/about_us/about_us.js";
+  "./pages/gg_robot/gg_robot.js";
+  "./pages/pb_robot/pb_robot.js";
+  "./pages/ls_robot/ls_robot.js";
+  "./pages/roomba/roomba.js";
 }
 const _sfc_main = {
   onLaunch() {
