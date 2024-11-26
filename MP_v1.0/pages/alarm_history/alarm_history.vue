@@ -57,6 +57,24 @@
 				</view>
 			</view>
 		</scroll-view>
+
+		<!-- 弹框：显示报警详细信息 -->
+		<view v-if="showModal" class="modal" @click="closeModal">
+			<view class="modal-content" @click.stop>
+				<view class="modal-header">
+					<text class="modal-title">报警详情</text>
+					<button class="close-btn" @click="closeModal">×</button>
+				</view>
+				<view class="modal-body">
+					<view><strong>报警名称:</strong> {{ selectedItem.AlarmName }}</view>
+					<view><strong>报警时间:</strong> {{ selectedItem.AlarmTime }}</view>
+					<view><strong>报警级别:</strong> {{ selectedItem.AlarmLevel }}</view>
+					<view><strong>报警位置:</strong> {{ selectedItem.Position }}</view>
+					<view><strong>确认状态:</strong> {{ selectedItem.Confirm }}</view>
+				</view>
+			</view>
+		</view>
+
 		<view class="pagination">
 			<button :disabled="currentPage === 1" @click="prevPage">上一页</button>
 			<span class="span">第 {{ currentPage }} 页 / 共 {{ totalPages }} 页</span>
@@ -94,6 +112,8 @@
 				endDate: '',
 				currentPage: 1,
 				pageSize: 8, // 每页展示的数据条数
+				showModal: false, // 控制弹框显示
+				selectedItem: {} // 存储点击查看详情的报警信息
 			};
 		},
 		computed: {
@@ -169,7 +189,11 @@
 			},
 			// 查看详情
 			viewDetails(item) {
-				console.log("查看详情", item);
+				this.selectedItem = item; // 将点击的报警数据存储到 selectedItem
+				this.showModal = true; // 显示弹框
+			},
+			closeModal() {
+				this.showModal = false; // 关闭弹框
 			},
 			// 上一页
 			prevPage() {
@@ -252,7 +276,8 @@
 		border: 1px solid #444;
 		font-size: 13px;
 	}
-.data-row {
+
+	.data-row {
 		display: flex;
 		flex-wrap: nowrap;
 		/* 子元素在同一行展示 */
@@ -260,6 +285,7 @@
 		margin-top: 2px;
 		/* 每行之间增加间距 */
 	}
+
 	.data-row1 {
 		display: flex;
 		flex-wrap: nowrap;
@@ -308,6 +334,58 @@
 		border-radius: 5px;
 		font-size: 12px;
 		/* 缩小字体 */
+	}
+
+	.modal {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: rgba(0, 0, 0, 0.7);
+		/* 半透明黑色背景 */
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		z-index: 1000;
+	}
+
+	.modal-content {
+		background: #2e2e3f;
+		padding: 20px;
+		border-radius: 10px;
+		box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+		width: 80%;
+		max-width: 600px;
+	}
+
+	.modal-header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: 10px;
+	}
+
+	.modal-title {
+		font-size: 20px;
+		color: #fff;
+	}
+
+	.close-btn {
+		background: transparent;
+		border: none;
+		color: #fff;
+		font-size: 18px;
+		cursor: pointer;
+	}
+
+	.modal-body {
+		font-size: 14px;
+		color: #ccc;
+	}
+
+	.modal-body strong {
+		color: #fff;
 	}
 
 	.pagination {

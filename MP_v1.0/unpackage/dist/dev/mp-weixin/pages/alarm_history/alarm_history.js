@@ -27,8 +27,12 @@ const _sfc_main = {
       startDate: "",
       endDate: "",
       currentPage: 1,
-      pageSize: 8
+      pageSize: 8,
       // 每页展示的数据条数
+      showModal: false,
+      // 控制弹框显示
+      selectedItem: {}
+      // 存储点击查看详情的报警信息
     };
   },
   computed: {
@@ -95,7 +99,11 @@ const _sfc_main = {
     },
     // 查看详情
     viewDetails(item) {
-      console.log("查看详情", item);
+      this.selectedItem = item;
+      this.showModal = true;
+    },
+    closeModal() {
+      this.showModal = false;
     },
     // 上一页
     prevPage() {
@@ -118,7 +126,7 @@ const _sfc_main = {
   }
 };
 function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
-  return {
+  return common_vendor.e({
     a: $data.alarmName,
     b: common_vendor.o(($event) => $data.alarmName = $event.detail.value),
     c: common_vendor.t($data.selectedAlertCategory[$data.alertCategories_index]),
@@ -148,13 +156,25 @@ function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
         g: index
       };
     }),
-    t: $data.currentPage === 1,
-    v: common_vendor.o((...args) => $options.prevPage && $options.prevPage(...args)),
-    w: common_vendor.t($data.currentPage),
-    x: common_vendor.t($options.totalPages),
-    y: $data.currentPage === $options.totalPages,
-    z: common_vendor.o((...args) => $options.nextPage && $options.nextPage(...args))
-  };
+    t: $data.showModal
+  }, $data.showModal ? {
+    v: common_vendor.o((...args) => $options.closeModal && $options.closeModal(...args)),
+    w: common_vendor.t($data.selectedItem.AlarmName),
+    x: common_vendor.t($data.selectedItem.AlarmTime),
+    y: common_vendor.t($data.selectedItem.AlarmLevel),
+    z: common_vendor.t($data.selectedItem.Position),
+    A: common_vendor.t($data.selectedItem.Confirm),
+    B: common_vendor.o(() => {
+    }),
+    C: common_vendor.o((...args) => $options.closeModal && $options.closeModal(...args))
+  } : {}, {
+    D: $data.currentPage === 1,
+    E: common_vendor.o((...args) => $options.prevPage && $options.prevPage(...args)),
+    F: common_vendor.t($data.currentPage),
+    G: common_vendor.t($options.totalPages),
+    H: $data.currentPage === $options.totalPages,
+    I: common_vendor.o((...args) => $options.nextPage && $options.nextPage(...args))
+  });
 }
 const MiniProgramPage = /* @__PURE__ */ common_vendor._export_sfc(_sfc_main, [["render", _sfc_render]]);
 wx.createPage(MiniProgramPage);
