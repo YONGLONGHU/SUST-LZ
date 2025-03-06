@@ -12,7 +12,9 @@
     "pages/gg_robot/gg_robot",
     "pages/pb_robot/pb_robot",
     "pages/ls_robot/ls_robot",
-    "pages/roomba/roomba"
+    "pages/roomba/roomba",
+    "pages/search/search",
+    "pages/webview/webview"
   ],
   "window": {
     "navigationBarTextStyle": "black",
@@ -43,6 +45,12 @@
         "text": "报警历史",
         "iconPath": "static/icons/icon_history.png",
         "selectedIconPath": "static/icons/icon_history_selected.png"
+      },
+      {
+        "pagePath": "pages/search/search",
+        "text": "搜索一下",
+        "iconPath": "static/icons/search.png",
+        "selectedIconPath": "static/icons/search_selected.png"
       },
       {
         "pagePath": "pages/management/management",

@@ -15,6 +15,8 @@ if (!Math) {
   "./pages/pb_robot/pb_robot.js";
   "./pages/ls_robot/ls_robot.js";
   "./pages/roomba/roomba.js";
+  "./pages/search/search.js";
+  "./pages/webview/webview.js";
 }
 const _sfc_main = {
   onLaunch() {

@@ -58,7 +58,7 @@
 		flex-direction: column;
 		align-items: center;
 		background: linear-gradient(135deg, #1e1e2f, #292942);
-		height: 100vh;
+		min-height: 100vh;
 	}
 
 	.header {

@@ -60,7 +60,7 @@ const _sfc_main = {
         title: "加载中..."
         // 显示加载动画
       });
-      const apiUrl = "http://192.168.1.128:3000/data";
+      const apiUrl = "http://192.168.1.102:8083/get_lz_test";
       common_vendor.index.request({
         url: apiUrl,
         method: "GET",

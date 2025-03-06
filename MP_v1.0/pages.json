@@ -82,6 +82,20 @@
 			{
 				"navigationBarTitleText" : "Roomba s9机器人"
 			}
+		},
+		{
+			"path" : "pages/search/search",
+			"style" : 
+			{
+				"navigationBarTitleText" : "搜索一下"
+			}
+		},
+		{
+			"path" : "pages/webview/webview",
+			"style" : 
+			{
+				"navigationBarTitleText" : "详情网页"
+			}
 		}
 	],
 	"globalStyle": {
@@ -112,6 +126,12 @@
 				"text": "报警历史",
 				"iconPath": "static/icons/icon_history.png",
 				"selectedIconPath": "static/icons/icon_history_selected.png"
+			},
+			{
+				"pagePath": "pages/search/search",
+				"text": "搜索一下",
+				"iconPath": "static/icons/search.png",
+				"selectedIconPath": "static/icons/search_selected.png"
 			},
 			{
 				"pagePath": "pages/management/management",

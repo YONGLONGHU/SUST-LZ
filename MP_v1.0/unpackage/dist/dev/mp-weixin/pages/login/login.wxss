@@ -1,87 +1,89 @@
 
-	/* 登录页面容器 */
+/* 登录页面容器 */
 .login-container {
-	  display: flex;
-	  align-items: center;
-	  justify-content: center;
-	  background: linear-gradient(135deg, #1e1e2f, #3a3a5c);
-	  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #1e1e2f, #3a3a5c);
+  color: white;
 }
-	
-	/* 登录框样式 */
+
+/* 登录/注册框样式 */
 .login-box {
-	  width: 90%;
-	  height: 35%;
-	  max-width: 600rpx;
-	  padding: 40rpx 20rpx;
-	  background: rgba(255, 255, 255, 0.1);
-	  border-radius: 25rpx;
-	  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
-	  text-align: center;
+  width: 90%;
+  height: 40%;
+  max-width: 600rpx;
+  padding: 40rpx 20rpx;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 25rpx;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+  text-align: center;
 }
-	
-	/* 标题样式 */
+
+/* 标题样式 */
 .title {
-	  font-size: 42rpx;
-	  font-weight: bold;
-	  margin-bottom: 60rpx;
-	  color: #00ccff;
+  font-size: 42rpx;
+  font-weight: bold;
+  margin-bottom: 60rpx;
+  color: #00ccff;
 }
-	
-	/* 输入框组 */
+
+/* 输入框组 */
 .input-group {
-	  margin-top: 30rpx;
-	  display: flex;
-	  align-items: center;
-	  margin-bottom: 30rpx;
-	  background: rgba(255, 255, 255, 0.15);
-	  border-radius: 20rpx;
-	  padding: 10rpx 15rpx;
-	  width: 80%; /* 设置宽度为父容器的80% */
-	  margin-left: auto; /* 水平居中 */
-	  margin-right: auto; /* 水平居中 */
+  margin-top: 30rpx;
+  display: flex;
+  align-items: center;
+  margin-bottom: 30rpx;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 20rpx;
+  padding: 10rpx 15rpx;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
 }
-	
-	/* 输入框图标 */
+
+/* 输入框图标 */
 .icon {
-	  width: 50rpx;
-	  height: 50rpx;
-	  margin-right: 15rpx;
+  width: 50rpx;
+  height: 50rpx;
+  margin-right: 15rpx;
 }
-	
-	/* 输入框 */
+
+/* 输入框 */
 .input-field {
-	  flex: 1;
-	  height: 60rpx;
-	  font-size: 30rpx;
-	  border: none;
-	  background: transparent;
-	  color: white;
-	  outline: none;
+  flex: 1;
+  height: 60rpx;
+  font-size: 30rpx;
+  border: none;
+  background: transparent;
+  color: white;
+  outline: none;
 }
-	
-	/* 输入框占位符样式 */
+
+/* 输入框占位符样式 */
 .placeholder {
-	  color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.6);
 }
-	
-	/* 登录按钮 */
+
+/* 登录/注册按钮 */
 .login-button {
-	  width: 100%;
-	  height: 70rpx;
-	  background: linear-gradient(135deg, #00ccff, #0077ff);
-	  border: none;
-	  border-radius: 35rpx;
-	  color: white;
-	  font-size: 30rpx;
-	  font-weight: bold;
-	  box-shadow: 0px 5px 15px rgba(0, 204, 255, 0.5);
-	  transition: all 0.3s;
-	  width: 85%; /* 设置宽度为父容器的80% */
-	  margin-left: auto; /* 水平居中 */
-	  margin-right: auto; /* 水平居中 */
+  width: 85%;
+  height: 70rpx;
+  background: linear-gradient(135deg, #00ccff, #0077ff);
+  border: none;
+  border-radius: 35rpx;
+  color: white;
+  font-size: 30rpx;
+  font-weight: bold;
+  box-shadow: 0px 5px 15px rgba(0, 204, 255, 0.5);
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30rpx;
 }
-.login-button:hover {
-	  transform: scale(1.05);
-	  box-shadow: 0px 8px 20px rgba(0, 204, 255, 0.7);
+
+/* 切换模式文字 */
+.toggle-text {
+  font-size: 28rpx;
+  color: #00ccff;
+  text-decoration: underline;
 }
