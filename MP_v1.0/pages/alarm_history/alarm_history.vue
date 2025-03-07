@@ -149,7 +149,7 @@
 				uni.showLoading({
 					title: '加载中...', // 显示加载动画
 				});
-				const apiUrl = 'http://192.168.1.102:8083/get_lz_test';
+				const apiUrl = 'http://192.168.173.250:8083/get_lz_test';
 				uni.request({
 					url: apiUrl,
 					method: 'GET',

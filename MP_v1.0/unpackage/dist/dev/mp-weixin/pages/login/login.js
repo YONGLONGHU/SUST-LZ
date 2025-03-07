@@ -30,7 +30,7 @@ const _sfc_main = {
         common_vendor.index.showToast({ title: "请输入账号和密码", icon: "none" });
         return;
       }
-      const url = this.isLogin ? "http://192.168.1.102:8083/login" : "http://192.168.1.102:8083/register";
+      const url = this.isLogin ? "http://192.168.173.250:8083/login" : "http://192.168.173.250:8083/register";
       const data = {
         username: this.username,
         password: this.password
